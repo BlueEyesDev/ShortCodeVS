@@ -1,4 +1,4 @@
-public static (string Tostring, byte[] Bytes) TDES(object Data, object Key, CipherMode Cipher, PaddingMode Padding, bool Encrypt)
+public static (string String, byte[] Bytes) TDES(object Data, object Key, CipherMode Cipher, PaddingMode Padding, bool Encrypt)
 		{
 		
 			try {
