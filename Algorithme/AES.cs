@@ -1,4 +1,4 @@
-public static (string Tostring, byte[] Bytes) AES(object Data, bool encrypt, byte[] SetKey = null, byte[] SetIv = null) {
+public static (string String, byte[] Bytes) AES(object Data, bool encrypt, byte[] SetKey = null, byte[] SetIv = null) {
             try
             {
 				if (Data is byte[] == false && (((string)Data).Length % 4 == 0) && Regex.IsMatch((string)Data, @"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None))
