@@ -1,6 +1,7 @@
-<UserSettings><ApplicationIdentity version="17.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.Name">Algorithme</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">true</PropertyValue><PropertyValue name="Tab0.RecordType">1</PropertyValue><PropertyValue name="Tab0.Position">28</PropertyValue><PropertyValue name="Tab1.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue><PropertyValue name="Tab1.Name">Standard</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">true</PropertyValue><PropertyValue name="Tab1.RecordType">4</PropertyValue><PropertyValue name="Tab1.Position">37</PropertyValue><PropertyValue name="TabCount">2</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">68CF179F4DEA724FFFF99367AE4C3808</PropertyValue><PropertyValue name="Item0.Name">AES</PropertyValue><PropertyValue name="Item0.UseDefaultName">false</PropertyValue><PropertyValue name="Item0.Tab">Algorithme</PropertyValue><PropertyValue name="Item0.OriginalTab">Algorithme</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">public static (string Tostring, byte[] Bytes) AES(object Data, bool encrypt, byte[] SetKey = null, byte[] SetIv = null) {
-            try
-            {
+<UserSettings><ApplicationIdentity version="17.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.Name">Algorithme</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">true</PropertyValue><PropertyValue name="Tab0.RecordType">1</PropertyValue><PropertyValue name="Tab0.Position">28</PropertyValue><PropertyValue name="Tab1.Name">Process Memory</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">false</PropertyValue><PropertyValue name="Tab1.RecordType">1</PropertyValue><PropertyValue name="Tab1.Position">37</PropertyValue><PropertyValue name="Tab1.OriginalName">Memory</PropertyValue><PropertyValue name="Tab2.Name">Windows</PropertyValue><PropertyValue name="Tab2.View">0</PropertyValue><PropertyValue name="Tab2.UseDefaultName">false</PropertyValue><PropertyValue name="Tab2.RecordType">1</PropertyValue><PropertyValue name="Tab2.Position">38</PropertyValue><PropertyValue name="Tab2.OriginalName">Windows</PropertyValue><PropertyValue name="Tab3.Name">Imports</PropertyValue><PropertyValue name="Tab3.View">0</PropertyValue><PropertyValue name="Tab3.UseDefaultName">false</PropertyValue><PropertyValue name="Tab3.RecordType">1</PropertyValue><PropertyValue name="Tab3.Position">39</PropertyValue><PropertyValue name="Tab3.OriginalName">Imports</PropertyValue><PropertyValue name="Tab4.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue><PropertyValue name="Tab4.Name">Standard</PropertyValue><PropertyValue name="Tab4.View">0</PropertyValue><PropertyValue name="Tab4.UseDefaultName">true</PropertyValue><PropertyValue name="Tab4.RecordType">4</PropertyValue><PropertyValue name="Tab4.Position">40</PropertyValue><PropertyValue name="TabCount">5</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">E5E691C3E66601E0D522FB885AF396D8</PropertyValue><PropertyValue name="Item0.Name">AES</PropertyValue><PropertyValue name="Item0.UseDefaultName">false</PropertyValue><PropertyValue name="Item0.Tab">Algorithme</PropertyValue><PropertyValue name="Item0.OriginalTab">Algorithme</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">		public static (string String, byte[] Bytes) AES(object Data, bool encrypt, byte[] SetKey = null, byte[] SetIv = null)
+		{
+			try
+			{
 				if (Data is byte[] == false &amp;&amp; (((string)Data).Length % 4 == 0) &amp;&amp; Regex.IsMatch((string)Data, @"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None))
 					Data = Convert.FromBase64String((string)Data);
 				AesManaged aes = new AesManaged();
@@ -25,16 +26,53 @@
 					return ((string)Data, UTF8Encoding.UTF8.GetBytes((string)Data));
 				}
 			}
-            catch (Exception ex) {
+			catch (Exception ex)
+			{
 
-                throw ex;
-            }
-		}</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">3546BFA00430AB8B284C4E3DD11CCC41</PropertyValue><PropertyValue name="Item1.Name">Triple DES</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">Algorithme</PropertyValue><PropertyValue name="Item1.OriginalTab">Algorithme</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">public static (string Tostring, byte[] Bytes) TDES(object Data, object Key, CipherMode Cipher, PaddingMode Padding, bool Encrypt)
+				throw ex;
+			}
+		}</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">3E86398EA773304F9B5DB34775BB6CD6</PropertyValue><PropertyValue name="Item1.Name">Xor</PropertyValue><PropertyValue name="Item1.UseDefaultName">false</PropertyValue><PropertyValue name="Item1.Tab">Algorithme</PropertyValue><PropertyValue name="Item1.OriginalTab">Algorithme</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">		public static (string String, byte[] Bytes, string Base64) Xor(object Data, object Key)
 		{
-		
-			try {
+			char[] Xor;
+			try
+			{
+				if (Data is byte[] == true)
+					Data = UTF8Encoding.UTF8.GetString((byte[])Data);
+				else if (Data is byte[] == false &amp;&amp; (((string)Data).Length % 4 == 0) &amp;&amp; Regex.IsMatch((string)Data, @"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None))
+					Data = UTF8Encoding.UTF8.GetString(Convert.FromBase64String((string)Data));
+				Xor = ((string)Data).ToCharArray();
+				if (Key is byte[])
+					Key = Data = UTF8Encoding.UTF8.GetString((byte[])Data);
+
+				if (Key is string)
+				{
+					if (((string)Key).Length != ((string)Data).Length)
+					{
+						while (((string)Key).Length &lt; ((string)Data).Length)
+							Key += ((string)Key);
+
+						for (int i = 0; i &lt; ((string)Data).Length; i++)
+							Xor[i] = (char)(((string)Data)[i] ^ ((string)Key)[i]);
+					}
+				}
+				else if (Key is char || Key is int)
+				{
+					for (int i = 0; i &lt; ((string)Data).Length; i++)
+						Xor[i] = (char)(((string)Data)[i] ^ (char)Key);
+				}
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+			return (new string(Xor), UTF8Encoding.UTF8.GetBytes(Xor), Convert.ToBase64String(UTF8Encoding.UTF8.GetBytes(Xor)));
+		}</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">3A6E9522DF9F76CB0CA58A660991935F</PropertyValue><PropertyValue name="Item2.Name">Triple DES</PropertyValue><PropertyValue name="Item2.UseDefaultName">false</PropertyValue><PropertyValue name="Item2.Tab">Algorithme</PropertyValue><PropertyValue name="Item2.OriginalTab">Algorithme</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">		public static (string String, byte[] Bytes) TripleDES(object Data, object Key, CipherMode Cipher, PaddingMode Padding, bool Encrypt)
+		{
+
+			try
+			{
 				if (Data is byte[] == false &amp;&amp; (((string)Data).Length % 4 == 0) &amp;&amp; Regex.IsMatch((string)Data, @"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None))
-					Data = Convert.FromBase64String((string)Data); 
+					Data = Convert.FromBase64String((string)Data);
 				else if (Data is byte[] == false)
 					Data = UTF8Encoding.UTF8.GetBytes((string)Data);
 
@@ -64,4 +102,27 @@
 			{
 				throw ex;
 			}
-		}</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="ItemCount">2</PropertyValue></Category></Category></UserSettings>
+		}</PropertyValue><PropertyValue name="Item2.Position">3</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">96B9A7F14B229E7D0922CCA610A3489C</PropertyValue><PropertyValue name="Item3.Name">Write</PropertyValue><PropertyValue name="Item3.UseDefaultName">false</PropertyValue><PropertyValue name="Item3.Tab">Memory</PropertyValue><PropertyValue name="Item3.OriginalTab">Process Memory</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">		private static void Write(IntPtr Offset, byte[] Wbytes, IntPtr WprocessHandle) {
+			int bytesWritten = 0;
+			WriteProcessMemory((int)WprocessHandle, Offset, Wbytes, Wbytes.Length, ref bytesWritten);
+		}</PropertyValue><PropertyValue name="Item3.Position">1</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">34FDEE32500B8A2CA79A0569365EC926</PropertyValue><PropertyValue name="Item4.Name">Read</PropertyValue><PropertyValue name="Item4.UseDefaultName">false</PropertyValue><PropertyValue name="Item4.Tab">Memory</PropertyValue><PropertyValue name="Item4.OriginalTab">Process Memory</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">		private static (string String, byte[] Bytes, int Int, float Float, double Double) Read(IntPtr Offset, int Size, IntPtr HprocessHandle)
+		{
+			int bytesRead = 0;
+			byte[] ReadByte = new byte[Size];
+			ReadProcessMemory((int)HprocessHandle, Offset, ReadByte, ReadByte.Length, ref bytesRead);
+			return (UTF8Encoding.ASCII.GetString(ReadByte), ReadByte, Convert.ToInt32(ReadByte), Convert.ToSingle(ReadByte), Convert.ToDouble(ReadByte));
+		}</PropertyValue><PropertyValue name="Item4.Position">2</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">08E4C944D69A67DB03D8E32187E3CBAC</PropertyValue><PropertyValue name="Item5.Name">RunAdmin</PropertyValue><PropertyValue name="Item5.UseDefaultName">false</PropertyValue><PropertyValue name="Item5.Tab">Windows</PropertyValue><PropertyValue name="Item5.OriginalTab">Windows</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">		public static void RunAdmin()
+		{
+			if (!new WindowsPrincipal(WindowsIdentity.GetCurrent()).IsInRole(WindowsBuiltInRole.Administrator))
+				try
+				{
+					Process.Start(new ProcessStartInfo() { UseShellExecute = true, WorkingDirectory = Environment.CurrentDirectory, FileName = Process.GetCurrentProcess().MainModule.FileName, Verb = "runas" });
+					Process.GetCurrentProcess().Kill();
+				}
+				catch
+				{
+					Process.GetCurrentProcess().Kill();
+				}
+		}</PropertyValue><PropertyValue name="Item5.Position">1</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">959C341D7FE299EAB022988926525AA9</PropertyValue><PropertyValue name="Item6.Name">WriteProcessMemory</PropertyValue><PropertyValue name="Item6.UseDefaultName">false</PropertyValue><PropertyValue name="Item6.Tab">Imports</PropertyValue><PropertyValue name="Item6.OriginalTab">Imports</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">		[DllImport("kernel32.dll", SetLastError = true)]
+		public static extern bool WriteProcessMemory(int hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesWrite);</PropertyValue><PropertyValue name="Item6.Position">1</PropertyValue><PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item7.ID">D9E8D96E4C7DB909DEF667CFA3B7FCD3</PropertyValue><PropertyValue name="Item7.Name">ReadProcessMemory</PropertyValue><PropertyValue name="Item7.UseDefaultName">false</PropertyValue><PropertyValue name="Item7.Tab">Imports</PropertyValue><PropertyValue name="Item7.OriginalTab">Imports</PropertyValue><PropertyValue name="Item7.RecordType">1</PropertyValue><PropertyValue name="Item7.Data">		[DllImport("kernel32.dll")]
+		public static extern bool ReadProcessMemory(int hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, int dwSize, ref int lpNumberOfBytesRead);</PropertyValue><PropertyValue name="Item7.Position">2</PropertyValue><PropertyValue name="ItemCount">8</PropertyValue></Category></Category></UserSettings>
