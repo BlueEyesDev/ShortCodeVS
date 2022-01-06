@@ -1,9 +1,10 @@
-public static (string String, byte[] Bytes) TDES(object Data, object Key, CipherMode Cipher, PaddingMode Padding, bool Encrypt)
+		public static (string String, byte[] Bytes) TripleDES(object Data, object Key, CipherMode Cipher, PaddingMode Padding, bool Encrypt)
 		{
-		
-			try {
+
+			try
+			{
 				if (Data is byte[] == false && (((string)Data).Length % 4 == 0) && Regex.IsMatch((string)Data, @"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None))
-					Data = Convert.FromBase64String((string)Data); 
+					Data = Convert.FromBase64String((string)Data);
 				else if (Data is byte[] == false)
 					Data = UTF8Encoding.UTF8.GetBytes((string)Data);
 
