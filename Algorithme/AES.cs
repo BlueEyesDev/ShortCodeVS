@@ -1,6 +1,7 @@
-public static (string String, byte[] Bytes) AES(object Data, bool encrypt, byte[] SetKey = null, byte[] SetIv = null) {
-            try
-            {
+		public static (string String, byte[] Bytes) AES(object Data, bool encrypt, byte[] SetKey = null, byte[] SetIv = null)
+		{
+			try
+			{
 				if (Data is byte[] == false && (((string)Data).Length % 4 == 0) && Regex.IsMatch((string)Data, @"^[a-zA-Z0-9\+/]*={0,3}$", RegexOptions.None))
 					Data = Convert.FromBase64String((string)Data);
 				AesManaged aes = new AesManaged();
@@ -25,8 +26,9 @@ public static (string String, byte[] Bytes) AES(object Data, bool encrypt, byte[
 					return ((string)Data, UTF8Encoding.UTF8.GetBytes((string)Data));
 				}
 			}
-            catch (Exception ex) {
+			catch (Exception ex)
+			{
 
-                throw ex;
-            }
+				throw ex;
+			}
 		}
